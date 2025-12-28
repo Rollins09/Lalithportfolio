@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the webpage, language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets UTF-8 character encoding to support all characters -->
+
+    <title>Contact | Lalith N</title>
+    <!-- Title shown in the browser tab -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the website responsive on all devices -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Links external CSS file for styling -->
+</head>
+
+<body>
+<!-- Main visible content of the webpage -->
+
+<nav>
+    <!-- Navigation bar -->
+
+    <h2 class="logo">Lalith N</h2>
+    <!-- Logo / website owner name -->
+
+    <ul>
+        <!-- Navigation links list -->
+
+        <li><a href="index.html">Home</a></li>
+        <!-- Link to Home page -->
+
+        <li><a href="about.html">About</a></li>
+        <!-- Link to About page -->
+
+        <li><a href="projects.html">Projects</a></li>
+        <!-- Link to Projects page -->
+
+        <li><a href="resume.html">Resume</a></li>
+        <!-- Link to Resume page -->
+
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <!-- Link to Contact page (active highlights current page) -->
+    </ul>
+</nav>
+
+<section class="page fade-in">
+    <!-- Main Contact section with fade-in animation -->
+
+    <h1>Contact Me</h1>
+    <!-- Page heading -->
+
+    <p>Let’s connect for opportunities or collaborations.</p>
+    <!-- Short introductory text -->
+
+    <form id="contactForm" class="contact-form fade-in">
+        <!-- Contact form for user messages -->
+
+        <div class="input-group">
+            <!-- Grouping name and email inputs -->
+
+            <input type="text" placeholder="Your Name" required>
+            <!-- Input field for user's name -->
+
+            <input type="email" placeholder="Your Email" required>
+            <!-- Input field for user's email -->
+        </div>
+
+        <textarea placeholder="Your Message" required></textarea>
+        <!-- Text area for user's message -->
+
+        <button class="btn send-btn" type="submit">
+            <!-- Submit button to send the message -->
+            Send Message
+        </button>
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+<!-- Links external JavaScript file for form handling or animations -->
+
+</body>
+<!-- End of body content -->
+
+</html>
+<!-- End of HTML document -->

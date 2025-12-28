@@ -1,0 +1,207 @@
+/* ===== RESET & GLOBAL STYLES ===== */
+* {
+    margin: 0;                     /* Removes default margin */
+    padding: 0;                    /* Removes default padding */
+    box-sizing: border-box;        /* Includes padding & border in width/height */
+    font-family: "Segoe UI", sans-serif; /* Sets default font */
+}
+
+body {
+    background-color: #0f0f0f;     /* Dark background color */
+    color: #ffffff;               /* Default text color */
+}
+
+/* ===== NAVBAR STYLING ===== */
+nav {
+    position: fixed;              /* Keeps navbar fixed at top */
+    top: 0;
+    width: 100%;                  /* Full width navbar */
+    background: #0a0a0a;          /* Dark background */
+    padding: 18px 60px;           /* Space inside navbar */
+    display: flex;                /* Flex layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center;          /* Vertically center items */
+    z-index: 1000;                /* Keeps navbar above other elements */
+}
+
+.logo {
+    font-size: 24px;              /* Logo text size */
+    font-weight: bold;            /* Makes logo bold */
+    color: #00e5ff;               /* Accent color */
+}
+
+nav ul {
+    list-style: none;             /* Removes bullet points */
+    display: flex;                /* Horizontal menu */
+}
+
+nav ul li a {
+    color: #ffffff;               /* Link text color */
+    margin-left: 25px;            /* Space between links */
+    text-decoration: none;        /* Removes underline */
+}
+
+/* Active page & hover effect */
+nav ul li a.active,
+nav ul li a:hover {
+    color: #00e5ff;               /* Highlight color */
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    min-height: 100vh;            /* Full screen height */
+    padding-top: 120px;           /* Space below fixed navbar */
+    text-align: center;           /* Center text */
+    display: flex;                /* Flex layout */
+    flex-direction: column;       /* Vertical layout */
+    align-items: center;          /* Horizontal center */
+    justify-content: center;      /* Vertical center */
+}
+
+.hero img {
+    width: 160px;
+    height: 160px;                /* Forces square image */
+    border-radius: 50%;           /* Makes image circular */
+    object-fit: cover;            /* Prevents image distortion */
+    border: 3px solid #00e5ff;    /* Image border */
+    margin-bottom: 20px;          /* Space below image */
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4); /* Glow effect */
+}
+
+.hero h1 {
+    font-size: 42px;              /* Main heading size */
+}
+
+.hero h3 {
+    color: #b0b0b0;               /* Subheading color */
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 600px;             /* Limits paragraph width */
+    color: #cfcfcf;               /* Softer text color */
+}
+
+/* ===== BUTTON STYLING ===== */
+.btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 30px;          /* Rounded button */
+    background: #00e5ff;          /* Button color */
+    color: #000;                  /* Text color */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Outline button style */
+.btn.outline {
+    background: transparent;
+    border: 2px solid #00e5ff;
+    color: #00e5ff;
+}
+
+/* ===== PAGE SECTIONS ===== */
+.page {
+    padding: 140px 80px 80px;     /* Space around content */
+    text-align: center;
+}
+
+/* ===== GRID LAYOUT (ABOUT & PROJECTS) ===== */
+.grid,
+.projects-grid {
+    display: flex;                /* Flexbox grid */
+    gap: 30px;                    /* Space between cards */
+    justify-content: center;
+    flex-wrap: wrap;              /* Wrap cards on smaller screens */
+    margin-top: 40px;
+}
+
+/* ===== CARD STYLING ===== */
+.card,
+.project {
+    background: #151515;          /* Card background */
+    padding: 25px;
+    border-radius: 12px;          /* Rounded corners */
+    width: 280px;                 /* Fixed card width */
+}
+
+/* ===== FADE-IN ANIMATION ===== */
+.fade-in {
+    opacity: 0;                   /* Hidden initially */
+    transform: translateY(40px);  /* Move down */
+    transition: 1s ease;          /* Smooth animation */
+}
+
+/* Visible state after JS adds class */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);     /* Move to original position */
+}
+
+/* ===== CONTACT FORM STYLING ===== */
+.contact-form {
+    max-width: 520px;             /* Form width */
+    margin: 40px auto 0;          /* Center form */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;                    /* Space between fields */
+}
+
+/* Name & Email side-by-side */
+.input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: #121212;          /* Input background */
+    border: 2px solid #1f1f1f;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Message box size */
+.contact-form textarea {
+    min-height: 120px;
+    resize: none;                 /* Disable resize */
+}
+
+/* Focus glow effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.35);
+}
+
+/* Placeholder text color */
+.contact-form ::placeholder {
+    color: #9e9e9e;
+}
+
+/* Send button */
+.send-btn {
+    align-self: center;
+    padding: 14px 45px;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;   /* Stack inputs vertically */
+    }
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+    scroll-behavior: smooth;      /* Smooth scrolling effect */
+}
