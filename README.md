@@ -26,7 +26,11 @@ Screenshots
 
 <img width="1824" height="943" alt="image" src="https://github.com/user-attachments/assets/292dda5b-4348-42ad-abb1-56997bbddf96" />
 
+
+
 <img width="1779" height="910" alt="image" src="https://github.com/user-attachments/assets/7b53f0fe-2125-4e10-b347-b51d7b4bb033" />
+
+
 
 <img width="1796" height="923" alt="image" src="https://github.com/user-attachments/assets/6034364a-f718-4d1e-b952-7dcf2a3f5a71" />
 
@@ -35,7 +39,7 @@ Screenshots
 
 Email: lalithsabharwal015@gmai.com
 
-LinkedIn: linkedin.com/in/Lalith N
+LinkedIn: https://www.linkedin.com/in/lalitn-n-822591358
 
-GitHub: github.com/Rollins09
+GitHub: https://github.com/Rollins09
 
